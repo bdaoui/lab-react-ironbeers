@@ -17,16 +17,16 @@ const Home = () =>{
         
         
             <section>
-            <img src={newbeer} alt="beer"/>
-            <Link to={"/new-beer"}>
+            <img src={randombeer} alt="beer"/>
+            <Link to={"/random-beer"}>
                 <h2>Random Beer</h2>
             </Link>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </section>
         
         <section>
-            <img src={randombeer} alt="beer"/>
-            <Link to={'random-beer'}>
+            <img src={newbeer} alt="beer"/>
+            <Link to={'/new-beer'}>
                 <h2>New Beer</h2>
             </Link>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
