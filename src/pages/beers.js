@@ -1,9 +1,10 @@
 import Axios from "axios";
 import {useState, useEffect} from "react";
-
+import {Link} from "react-router-dom";
+import '../App.css'
 const Beers = () =>{
     
-    const [beerList, setBeerList] = useState();
+    const [beerList, setBeerList] = useState([]);
 
 
 
@@ -17,20 +18,29 @@ const Beers = () =>{
 
     }, [])
 
-		console.log(beerList);
     return(
-        <>
+        <div className="card">
 					{
 						beerList.map(e =>{
 							return(
-								<h1>{e.name}</h1>
+								<div key={e._id} >
+									<img src={e.image_url} alt="beer" />
+									<h1>{e.name}</h1>
+									<h2> {e.tagline}</h2>
+									<h2>{e.contributed_by}</h2>
+
+									 <Link to={ `/beers/:${e._id}`}>
+										<h3>Details</h3>
+									</Link> 
+
+								</div>
 							)
 						})
 					}
 					
             
 
-        </>
+        </div>
             )
     
         

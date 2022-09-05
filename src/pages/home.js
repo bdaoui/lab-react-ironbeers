@@ -1,4 +1,4 @@
-import beer from "../assets/beers.png";
+import beers from "../assets/beers.png";
 import newbeer from "../assets/new-beer.png";
 import randombeer from "../assets/random-beer.png";
 import {Link} from "react-router-dom";
@@ -8,7 +8,7 @@ const Home = () =>{
     return(
         <div className="App">
             <section>
-            <img src={beer} alt="beer"/>
+            <img src={beers} alt="beer"/>
             <Link to={"/beers"}>
                 <h2>All Beers</h2>
             </Link>
