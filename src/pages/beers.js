@@ -29,7 +29,7 @@ const Beers = () =>{
 									<h2> {e.tagline}</h2>
 									<h2>{e.contributed_by}</h2>
 
-									 <Link to={ `/beers/:${e._id}`}>
+									 <Link to={ `/beers/${e._id}`}>
 										<h3>Details</h3>
 									</Link> 
 
